@@ -3,43 +3,63 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('img/bb089eb4062158e97cddef585ef1eabe_1672886252.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0;
+    background-color: #0044cc;
+    color: #ffff00;
+    padding: 15px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
 main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
+section {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.imgR, .imgL {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0044cc;
+    color: #ffff00;
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
